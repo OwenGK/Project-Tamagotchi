@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:textSize="25dp"
-        android:text="Welcome to MyTomagotchiApp"
+        android:text="Welcome to MyTamagotchiApp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cat_that_is_sitting"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

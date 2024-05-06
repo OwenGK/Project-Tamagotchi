@@ -40,12 +40,12 @@
 
     <TextView
         android:id="@+id/resultTxtView"
-        android:layout_width="273dp"
-        android:layout_height="35dp"
+        android:layout_width="339dp"
+        android:layout_height="51dp"
         android:background="#FBA724"
         android:text="Health: 10  Hunger: 0  Happiness: 6"
-        android:textSize="17dp"
         android:textAlignment="center"
+        android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

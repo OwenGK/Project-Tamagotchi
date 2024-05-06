@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var petView: ImageView
     private lateinit var resultView: TextView
+    // Allows display of status of pet to change based on user input
     private var happiness : Int = 6
     private var hunger : Int = 0
     private var clean : Int = 10
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+    // Edits displayed text when playBtn is pressed by user
     private fun play() {
         if (happiness < 10) happiness +=4
         if (happiness > 10) happiness = 10
@@ -59,6 +61,7 @@ class MainActivity : AppCompatActivity() {
         if (clean < 0)clean = 0
         updateTextView()
     }
+    // Edits displayed text when feedBtn is pressed by user
     private fun feed() {
         if (hunger > 0)hunger -= 5
         if (hunger < 0)hunger = 0
@@ -68,6 +71,7 @@ class MainActivity : AppCompatActivity() {
         if (happiness < 0)happiness = 0
         updateTextView()
     }
+    // Edits displayed text when cleanBtn is pressed by user
     private fun clean() {
         if (happiness > 0) happiness = 0
         if (clean < 10) clean +=6
@@ -77,6 +81,8 @@ class MainActivity : AppCompatActivity() {
 
         updateTextView()
     }
+    // inspired by Kincade as he showed how to change displayed text when a user presses a button
+    // updates TextView when any of the three buttons is pressed
     private fun updateTextView() {
         resultView.text ="Health= $clean Hunger= $hunger Happiness= $happiness"
 
